@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Négation - C’est pas vrai – COURSE TITLE</title>
+<title>2&nbsp; Négation - C’est pas vrai – Français moderne</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,7 +71,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/002-phonologie-voyelles.html" rel="next">
+<link href="../chapters/001A-intro-corpus.html" rel="next">
 <link href="../chapters/000-intro.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -84,9 +84,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dbdfabad855d93f1198fe2c9c15362b2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-69daba74f81401e5057f4f67b8105895.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-dbdfabad855d93f1198fe2c9c15362b2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ca90d1db7a292d3fa245c9357a1704e5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c1e868a6436b556597637dddffadc8bd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-ca90d1db7a292d3fa245c9357a1704e5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -115,6 +115,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -304,7 +333,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">COURSE TITLE</a> 
+      <a href="../">Français moderne</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/YOUR-ORG/Teaching" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -327,7 +356,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/000-intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cours d’introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -338,32 +367,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/001A-intro-corpus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction et mise en contexte</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/002-phonologie-voyelles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Phonologie - Voyelles médianes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Morpho-syntaxe - Accord du participe passé</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/003-phonologie-liaison.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Phonologie - Liaison</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Phonologie - Liaison</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/004-morphologie-verlan.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Morphologie - Verlan</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Morphologie - Verlan</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/005-morphosyntaxe-participe-passe.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Morpho-syntaxe - Accord du participe passé</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Morpho-syntaxe - Accord du participe passé</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/006-syntaxe-subjonctif.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Syntaxe - Subjonctif</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Syntaxe - Subjonctif</span></span></a>
   </div>
 </li>
     </ul>
@@ -371,24 +406,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">3</span> Introduction</a>
-  <ul class="collapse">
-  <li><a href="#analyse-de-corpus" id="toc-analyse-de-corpus" class="nav-link" data-scroll-target="#analyse-de-corpus"><span class="header-section-number">3.1</span> Analyse de corpus</a>
-  <ul class="collapse">
-  <li><a href="#formulation-dune-question-de-recherche" id="toc-formulation-dune-question-de-recherche" class="nav-link" data-scroll-target="#formulation-dune-question-de-recherche"><span class="header-section-number">3.1.1</span> Formulation d’une question de recherche</a></li>
-  <li><a href="#choix-du-corpus" id="toc-choix-du-corpus" class="nav-link" data-scroll-target="#choix-du-corpus"><span class="header-section-number">3.1.2</span> Choix du corpus</a></li>
-  <li><a href="#corpus-de-langue-parlée-oral" id="toc-corpus-de-langue-parlée-oral" class="nav-link" data-scroll-target="#corpus-de-langue-parlée-oral"><span class="header-section-number">3.1.3</span> <strong>Corpus de Langue Parlée (Oral)</strong></a></li>
-  <li><a href="#corpus-de-langue-écrite-communication-numérique" id="toc-corpus-de-langue-écrite-communication-numérique" class="nav-link" data-scroll-target="#corpus-de-langue-écrite-communication-numérique"><span class="header-section-number">3.1.4</span> <strong>Corpus de Langue Écrite &amp; Communication Numérique</strong></a></li>
-  </ul></li>
-  <li><a href="#téléchargement-des-données" id="toc-téléchargement-des-données" class="nav-link" data-scroll-target="#téléchargement-des-données"><span class="header-section-number">3.2</span> Téléchargement des données</a></li>
-  </ul></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/YOUR-ORG/Teaching/edit/main/chapters/001-phonetique-affrication.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/YOUR-ORG/Teaching/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -413,21 +432,485 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<div class="hidden">
 <section id="introduction" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Introduction</h1>
 <p><a href="https://www.lemonde.fr/series-d-ete/article/2021/07/31/le-ne-marque-de-negation-en-voie-de-disparition_6090096_3451060.html?srsltid=AfmBOorawSQY4BAOSbdNoDnmnri6b2thGEbIpUTly88xwK2ipKGz1W7z"><img src="images/clipboard-4256156183.png" class="img-fluid"></a></p>
 <p><img src="images/clipboard-3155544609.png" class="img-fluid"></p>
+<hr>
 <p><video src="images/AQN9VrcnP4vCes3Pw4caJ_TyrY8YYIOVNcX-bGwhTT_PYZ2Cfg1oJERsuoZWn6fe-w3KbmFbdOwKN7wBnim0GBXcT_6uplCtv9GAbeWcgA.mp4" class="img-fluid" controls=""><a href="images/AQN9VrcnP4vCes3Pw4caJ_TyrY8YYIOVNcX-bGwhTT_PYZ2Cfg1oJERsuoZWn6fe-w3KbmFbdOwKN7wBnim0GBXcT_6uplCtv9GAbeWcgA.mp4">Video</a></video></p>
-<section id="analyse-de-corpus" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="analyse-de-corpus"><span class="header-section-number">3.1</span> Analyse de corpus</h2>
-<section id="formulation-dune-question-de-recherche" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="formulation-dune-question-de-recherche"><span class="header-section-number">3.1.1</span> Formulation d’une question de recherche</h3>
+<hr>
+<p><img src="images/clipboard-2350255848.png" class="img-fluid"></p>
+<hr>
+<div class="side-by-side">
+<section id="ya-pas-moyen" class="level4" data-number="3.0.0.1">
+<h4 data-number="3.0.0.1" class="anchored" data-anchor-id="ya-pas-moyen"><span class="header-section-number">3.0.0.1</span> y’a pas moyen 🎶</h4>
 </section>
-<section id="choix-du-corpus" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="choix-du-corpus"><span class="header-section-number">3.1.2</span> Choix du corpus</h3>
+<section id="aya-nakamura-wikipédia" class="level4" data-number="3.0.0.2">
+<h4 data-number="3.0.0.2" class="anchored" data-anchor-id="aya-nakamura-wikipédia"><span class="header-section-number">3.0.0.2</span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaUDupaE1uwhB9LZS0Al-dJkrjQA5deCiemTpv8SYfiQ&amp;s.png" class="img-fluid" alt="Aya Nakamura — Wikipédia"></h4>
 </section>
-<section id="corpus-de-langue-parlée-oral" class="level3" data-number="3.1.3">
-<h3 data-number="3.1.3" class="anchored" data-anchor-id="corpus-de-langue-parlée-oral"><span class="header-section-number">3.1.3</span> <strong>Corpus de Langue Parlée (Oral)</strong></h3>
+</div>
+<hr>
+<p>Comparez</p>
+<ul>
+<li><p><em>Je viens pas.</em></p></li>
+<li><p><em>Je ne viens pas.</em></p></li>
+<li><p><em>*Je ne viens.</em></p>
+<ul>
+<li>Vraiment indispensable?</li>
+</ul></li>
+</ul>
+<hr>
+<p><img src="images/clipboard-3048244221.png" class="img-fluid" width="600"></p>
+<hr>
+<ul>
+<li><p><strong>Le traitement traditionnel dans les dictionnaires :</strong></p>
+<ul>
+<li><p>Des termes comme <em>rien</em> ou <em>personne</em> y sont classés comme <strong>pronoms indéfinis</strong>.</p></li>
+<li><p>Le terme <em>jamais</em> y est répertorié comme un <strong>adverbe de temps</strong>.</p></li>
+<li><p>Selon cette perspective classique, c’est uniquement la présence du mot <em>ne</em> qui leur conférerait une valeur négative.</p></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="histoire" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Histoire</h1>
+<ul>
+<li><p><strong>Dédoublement du <em>non</em> latin :</strong></p>
+<ul>
+<li><p>Le <em>non</em> latin a évolué vers deux formes distinctes :</p>
+<ul>
+<li><p>La forme tonique : <strong>non</strong></p></li>
+<li><p>La forme atone : <strong>ne</strong></p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Affaiblissement et renforcement (dès le XIIIᵉ siècle) :</strong></p>
+<ul>
+<li><p>Dès le XIIIᵉ siècle, le <em>ne</em> s’affaiblit.</p></li>
+<li><p>Il devient nécessaire de le renforcer à l’aide de mots qui étaient à l’origine des noms communs :</p>
+<ul>
+<li><p><em>un pas</em></p></li>
+<li><p><em>une personne</em></p></li>
+<li><p><em>un rien</em> (issu du latin <em>res</em> = « la chose »)</p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Exemples de structures récurrentes :</strong></p>
+<ul>
+<li><p><em>Ne mange mie</em> (ne mange même pas une miette).</p></li>
+<li><p><em>Ne boit goutte</em> (ne boit même pas une goutte).</p></li>
+</ul></li>
+<li><p><strong>Évolution contemporaine :</strong></p>
+<ul>
+<li><p>Des termes comme <em>mie</em> ou <em>goutte</em> ont aujourd’hui disparu de cet usage négatif.</p></li>
+<li><p>En revanche, les autres éléments (<em>pas</em>, <em>personne</em>, <em>rien</em>) sont devenus pleinement négatifs dans le système de la langue.</p></li>
+</ul></li>
+</ul>
+<hr>
+<p>Ex. l’expression de la négation en français ?</p>
+<blockquote class="blockquote">
+<p>« En français contemporain, la négation s’exprime par un morphème simple en position postverbale (par ex. Je danse pas). L’emploi d’un morphème discontinu d’une part et d’autre de la forme verbale niée est vieilli et senti comme un archaïsme (par ex. Je ne danse pas). » (JV)</p>
+</blockquote>
+<hr>
+<p>Le cycle de Jespersen</p>
+<p>Ex. : le cycle de <span class="citation" data-cites="jespersenNegationEnglishOther1917">@jespersenNegationEnglishOther1917</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 19%">
+<col style="width: 17%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Français 🇫🇷</th>
+<th>Anglais 🇬🇧</th>
+<th>Italien 🇮🇹</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Morphème simple en position préverbale</strong></td>
+<td>Jeo ne dis.<br>
+je NEG dire.PRS.1SG<br>
+<em>‘Je ne dis pas.’</em><br>
+(ancien français)</td>
+<td>Ic ne seah.<br>
+je NEG voir.IMPF.1SG<br>
+<em>‘Je ne voyais pas.’</em><br>
+(ancien anglais)</td>
+<td>Non gliel’ho detto.<br>
+NEG lui.le=ai dit<br>
+<em>‘Je ne lui ai pas dit.’</em><br>
+(italien standard / familier)</td>
+</tr>
+<tr class="even">
+<td><strong>Morphème discontinu de part et d’autre de la forme verbale</strong></td>
+<td>Je ne dis pas.<br>
+je NEG dire.PRS.1SG NEG<br>
+<em>‘Je ne dis pas.’</em><br>
+(français moderne standard)</td>
+<td>I ne saugh nawiht.<br>
+je NEG voir.IMPF.1SG NEG<br>
+<em>‘Je ne voyais pas.’</em><br>
+(moyen anglais)</td>
+<td>Non gliel’ho mica detto.<br>
+NEG lui.le=ai MICA dit<br>
+<em>‘Je ne lui ai pas dit.’</em><br>
+(italien familier)</td>
+</tr>
+<tr class="odd">
+<td><strong>Morphème simple en position postverbale</strong></td>
+<td>Je dis pas.<br>
+je dire.PRS.1SG NEG<br>
+<em>‘Je ne dis pas.’</em><br>
+(français moderne véhiculaire)</td>
+<td>I saw not.<br>
+je voyais NEG<br>
+<em>‘Je ne voyais pas.’</em><br>
+(anglais moderne naissant)</td>
+<td>Gliel’ho mica detto.<br>
+lui.le=ai MICA dit<br>
+<em>‘Je ne lui ai pas dit.’</em><br>
+(italien sous-standard / régional)</td>
+</tr>
+</tbody>
+</table>
+<!-- 
+Affaiblissement initial du mot négatof avec un accent faible
+- Pour maintenir négation, aon ajout second élément -> on créinterprète comme mot de la négation
+- on peut se passer du premier
+-->
+<hr>
+<section id="et-au-québec" class="level3" data-number="4.0.1">
+<h3 data-number="4.0.1" class="anchored" data-anchor-id="et-au-québec"><span class="header-section-number">4.0.1</span> Et au Québec</h3>
+<div class="side-by-side">
+<ul>
+<li><p>ne quasi absent à l’oral</p></li>
+<li><p>les mots négtifs puevent même être rebforcé par pas</p>
+<ul>
+<li>j’ai pas vu personne</li>
+</ul></li>
+</ul>
+<p><img src="images/clipboard-1405119325.png" class="img-fluid" width="1049"></p>
+</div>
+<hr>
+<ul>
+<li><p>Aujourd’hui, la valeur négative est véhiculée de manière autonome par les termes : <strong>pas</strong>, <strong>plus</strong>, <strong>jamais</strong>, <strong>aucun</strong>, <strong>nul</strong>, <strong>personne</strong> et <strong>rien</strong>.</p></li>
+<li><p>Ces éléments portent la charge sémantique de la négation dans le système moderne.</p></li>
+</ul>
+<!-- -->
+<ul>
+<li><p><strong>Le statut du <em>ne</em> « tout seul » :</strong></p>
+<ul>
+<li><p>Le <em>ne</em> employé isolément s’observe principalement dans les propositions subordonnées lorsqu’il a une valeur <strong>explétive</strong> (ex. <em>« Je crains qu’il ne vienne »</em>).</p></li>
+<li><p>Dans ce contexte, il ne porte aucune valeur négative et relève d’une marque purement syntaxique et de registre soutenue.</p></li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Définition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Explétif :</em> Il existe en français un <em>ne</em> dit <em>explétif</em>, c’est-à-dire qui n’est pas indispensable au sens ou à la syntaxe de la phrase et qui n’a pas son rôle habituel de négation. On le rencontre dans différents types de constructions, presque exclusivement à l’écrit, dans la langue soignée.</p>
+<ul>
+<li><p>Le <em>ne</em> explétif s’emploie avec des adverbes de comparaison comme <em>davantage</em>, <em>plus</em>, <em>moins</em>, <em>mieux</em>, <em>meilleur</em>, <em>pire</em>, <em>moindre</em>, utilisés avec <em>que</em> pour introduire une phrase subordonnée.</p></li>
+<li><p>On le trouve aussi dans certaines subordonnées introduites par des verbes comme <em>craindre</em>, <em>avoir peur</em>, <em>redouter</em>, <em>empêcher</em>, <em>éviter</em> et par d’autres verbes ou expressions de même signification.</p></li>
+<li><p>On utilise également le <em>ne</em> explétif avec certains <strong>subordonnants composésAfficher l’infobulle</strong> comme <em>avant que</em>, <em>à moins que</em>.</p></li>
+</ul>
+</div>
+</div>
+<ul>
+<li><p>Bien que la valeur négative se soit déplacée vers le second élément (<em>pas</em>, <em>plus</em>, <em>jamais</em>, <em>rien</em>, <em>personne</em>), l’évolution n’est pas totalement achevée.</p></li>
+<li><p>Le <em>ne</em> négatif subsiste encore aujourd’hui de façon autonome dans certaines locutions figées.</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="règles-académiques" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Règles académiques</h1>
+<p>Au XVIIᵉ siècle, le <em>ne</em> n’est pas systématique et <em>pas</em> est concurrencé par <em>point</em>.</p>
+<div class="side-by-side">
+<p>Il ne faut pas omettre le <em>ne</em>, ni le <em>pas</em> ou le <em>point</em>.</p>
+<blockquote class="blockquote">
+<p>C’est une espèce de barbarisme insoutenable d’omettre <em>pas</em> ou <em>point</em>.</p>
+</blockquote>
+<p>C’est-à-dire que le <em>ne</em> n’est pas suffisant.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWl5XYovVZpvkche03YaSxMOpIwNCGSDdWuUpJFojK8A&amp;s=10.png" class="img-fluid figure-img"></p>
+<figcaption>Claude Favre de Vaugelas — Wikipédia</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+<ul>
+<li><p>En 1932, l’Académie dit pourtant que <em>non</em> et <em>ne</em> sont les deux seules formes adverbiales qui aient par elles-mêmes un sens négatif.</p></li>
+<li><p>Mais du coup, pour l’Académie, <em>pas</em>, <em>du tout</em>, <em>plus</em>, <em>jamais</em> n’ont pas de sens négatif ?</p></li>
+<li><p>Et puis, si <em>ne</em> est négatif, que dire de : « Je n’aime que la linguistique » ? Et « Il ne boit pas que de l’eau », qui nie « ne … que » ?</p></li>
+<li><p>L’Académie répond par l’argument suivant : « C’est une locution vicieuse ».</p></li>
+</ul>
+<hr>
+<section id="les-règles-scolaires" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="les-règles-scolaires"><span class="header-section-number">5.1</span> Les règles scolaires</h2>
+<ul>
+<li><p>Depuis le début du XIXᵉ siècle, l’école enseigne la négation avec <em>ne</em>.</p>
+<ul>
+<li><p><em>Ne</em> est considérée comme la plus fiable des négations.</p></li>
+<li><p><em>Ne … point</em> est la plus forte.</p></li>
+<li><p><em>Ne … pas</em> tient le milieu.</p></li>
+</ul></li>
+<li><p><strong>Aujourd’hui</strong></p>
+<ul>
+<li><p>On présente la négation comme bipartite du type :</p></li>
+<li><p>La négation <em>ne … pas</em> est composée de l’adverbe <em>ne</em> et de l’adverbe <em>pas</em>.</p></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="les-usages-littéraires" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="les-usages-littéraires"><span class="header-section-number">5.2</span> Les usages littéraires</h2>
+<ul>
+<li><div>
+<p>La phrase négative avec <em>ne</em> reste majoritaire en littérature.</p>
+</div>
+<ul>
+<li><p><strong>Attestations anciennes sans <em>ne</em></strong></p>
+<ul>
+<li><p>On trouve des exemples d’omission de <em>ne</em> chez plusieurs auteurs :</p>
+<ul>
+<li><p><strong>Ronsard :</strong> « <em>Mignonne, allons voir si la rose […] a point perdu ceste vesprée les plis de sa robe pourprée</em> »</p></li>
+<li><p><strong>Madame de La Fayette</strong></p></li>
+<li><p><strong>Voltaire</strong></p></li>
+<li><p><strong>Victor Hugo (correspondance) :</strong> « <em>je suis pas digne de baiser la poussière de tes pieds</em> »</p></li>
+<li><p><strong>Balzac :</strong> « <em>j’avais pas le temps</em> »</p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Statut sociolinguistique</strong></p>
+<ul>
+<li>En général, l’absence de <em>ne</em> est considérée comme un trait populaire ou enfantin.</li>
+</ul></li>
+<li><p><strong>Évolution au XXᵉ siècle</strong></p>
+<ul>
+<li><p>C’est surtout au XXᵉ siècle, à partir de 1950, que la négation sans <em>ne</em> s’étend dans la littérature.</p></li>
+<li><p>On la retrouve notamment chez Marcel Proust, Paul Claudel, Jean Dutourd…</p></li>
+<li><p>Sur la base de corpus, à partir de 1980, <em>c’est pas vrai</em> est plus fréquent que <em>ce n’est pas vrai</em>.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="les-usages-ordinaires" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="les-usages-ordinaires"><span class="header-section-number">5.3</span> Les usages ordinaires</h2>
+<ul>
+<li>La baisse de l’usage du <em>ne</em> a évolué à travers l’histoire, mais cela prend du temps.</li>
+<li>Lors de la Première Guerre mondiale, les poilus omettent le <em>ne</em> dans 25 % des cas dans leurs lettres.</li>
+<li>Après 1980, on voit apparaître des négations sans <em>ne</em> sur des affiches publiques.</li>
+</ul>
+<div class="side-by-side">
+<ul>
+<li>SOS Racisme</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcTd0QQ-2o_BrciI9kDgieQ4J5hCaOSdFhL2cqYZygpw&amp;s=10.png" class="img-fluid figure-img"></p>
+<figcaption>Touche pas à mon pote — Wikipédia</figcaption>
+</figure>
+</div>
+</div>
+<div class="side-by-side">
+<ul>
+<li>Campagne gouvernementale</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCod_Un2BwLjJJGLln5KQAv5X9oQ_HjkIeBkJRWWdzhQ&amp;s=10.png" class="img-fluid figure-img"></p>
+<figcaption>ANCIENNE AFFICHE TABAC LE PIEGE Cigarette Boulet EUR 12,94 - PicClick FR</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+<div class="side-by-side">
+<ul>
+<li><em>Fais pas ci, fais pas ça</em></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw1Yq2HL_h5nJ5ymxDLivwDQCDhEzOPtKsgKbCKTb_vQ&amp;s=10.png" class="img-fluid figure-img"></p>
+<figcaption>Fais pas ci, fais pas ça - Série TV 2007 - AlloCiné</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+<hr>
+<section id="en-ligne" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="en-ligne"><span class="header-section-number">5.3.1</span> En ligne</h3>
+<ul>
+<li><p>En Suisse, on est à 23 % de phrases négatives avec <em>ne</em> dans les SMS.</p></li>
+<li><p>Sur les forums, on est à 42 % avec <em>ne</em>.</p></li>
+</ul>
+<hr>
+</section>
+<section id="à-loral" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="à-loral"><span class="header-section-number">5.3.2</span> À l’oral</h3>
+<ul>
+<li><p>En région parisienne :</p>
+<ul>
+<li><p>En 1970 : 15 % de phrases avec <em>ne</em>.</p></li>
+<li><p>En 1990 : on en observe 83 %.</p></li>
+</ul></li>
+<li><p>Corpus de référence du français parlé :</p>
+<ul>
+<li><p>14 % dans la partie la moins formelle.</p></li>
+<li><p>33 % dans la plus formelle.</p></li>
+</ul></li>
+</ul>
+<hr>
+<ul>
+<li><p>Les adultes utilisent plus de <em>ne</em> que les enfants.</p></li>
+<li><p>Les anciens utilisent plus de <em>ne</em> que les jeunes.</p></li>
+<li><p>GGF : dans un corpus récent, le <em>ne</em> dépasse rarement les 10 %.</p></li>
+<li><p>Néanmoins, l’usage du <em>ne</em> continue d’être un marqueur du bien-parler.</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="les-règles-robustes" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="les-règles-robustes"><span class="header-section-number">5.4</span> Les règles robustes</h2>
+<ul>
+<li><strong>L’approche linguistique</strong>
+<ul>
+<li>Les linguistes ne se demandent pas si c’est « bien » ou « mal ».</li>
+<li>La question est : quand est-ce que le <em>ne</em> est possible ?</li>
+</ul></li>
+<li><strong>Conditions de possibilité du <em>ne</em></strong>
+<ul>
+<li><em>Ne</em> n’est pas possible s’il n’y a pas de verbe :
+<ul>
+<li><em>Pas un mot</em></li>
+<li><em>*Ne pas un mot</em></li>
+</ul></li>
+<li>La négation doit porter sur le verbe :
+<ul>
+<li><em>Ne rien à faire</em> vs <em>Rien à faire</em></li>
+</ul></li>
+<li><em>Ne</em> n’est pas possible si la négation porte sur un autre élément que le verbe :
+<ul>
+<li><em>Je suis venu pour rien</em></li>
+<li><em>*Je ne suis venu pour rien</em></li>
+</ul></li>
+<li><em>Ne</em> n’est pas possible si le sujet est omis (par exemple avec un verbe impersonnel à l’oral) :
+<ul>
+<li><em>Faut pas exagérer</em></li>
+<li><em>*Ne faut pas exagérer</em></li>
+</ul></li>
+<li><em>Ne</em> seul est le plus souvent explétif :
+<ul>
+<li><em>Je crains qu’il ne pleuve</em> signifie « Je crains qu’il pleuve » (et non pas « Je crains qu’il ne pleuve pas »).</li>
+</ul></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="conclusions" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="conclusions"><span class="header-section-number">5.5</span> Conclusions</h2>
+<ul>
+<li><strong>Rôle du <em>ne</em></strong>
+<ul>
+<li>Faire croire que <em>ne</em> est négatif et que <em>ne</em> est obligatoire, c’est compliquer la grammaire.</li>
+<li><em>Pas</em>, <em>rien</em>, <em>personne</em> sont bien négatifs.</li>
+<li>On n’a pas besoin de <em>ne</em> pour le sens.</li>
+</ul></li>
+<li><strong>Désambiguïsation</strong>
+<ul>
+<li>Pour le mot « plus », on distingue l’adverbe négatif du comparatif par la prononciation.</li>
+<li>Le <em>ne</em> peut aider, mais le contexte suffit souvent pour comprendre les différences de sens.</li>
+<li>Le <em>ne</em> peut aider pour savoir sur quel verbe porte la négation, mais cela reste un cas très minoritaire :
+<ul>
+<li><em>Il sait ne pas parler</em></li>
+<li><em>Il ne sait pas parler</em></li>
+</ul></li>
+</ul></li>
+<li><strong>Statut sociolinguistique</strong>
+<ul>
+<li><em>Ne</em> ne se maintient que comme marque de style et de prestige social dans la norme subjective de certains locuteurs.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="test" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="test"><span class="header-section-number">5.6</span> Test</h2>
+<p>Que préférez-vous ?</p>
+<ul>
+<li>J’ai vu un film pas mal</li>
+<li>Je n’ai vu un film pas mal</li>
+<li>Ce n’est pas vrai</li>
+<li>C’est pas vrai</li>
+</ul>
+<hr>
+</section>
+<section id="analyse-de-corpus" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="analyse-de-corpus"><span class="header-section-number">5.7</span> Analyse de corpus</h2>
+<section id="formulation-de-la-question-de-recherche" class="level3" data-number="5.7.1">
+<h3 data-number="5.7.1" class="anchored" data-anchor-id="formulation-de-la-question-de-recherche"><span class="header-section-number">5.7.1</span> Formulation de la question de recherche</h3>
+<p>Pour opérationnaliser votre sujet, vous pouvez poser une question de recherche formelle et quantifiable :</p>
+<blockquote class="blockquote">
+<p><strong>« Dans quelle mesure le niveau de formalité de la situation d’énonciation influence-t-il la fréquence d’emploi de la particule de négation <em>ne</em> dans les productions verbales ou écrites d’un même locuteur (ou groupe de locuteurs) ? »</strong></p>
+</blockquote>
+<hr>
+<section id="hypothèse-associée" class="level4" data-number="5.7.1.1">
+<h4 data-number="5.7.1.1" class="anchored" data-anchor-id="hypothèse-associée"><span class="header-section-number">5.7.1.1</span> Hypothèse associée :</h4>
+<ul>
+<li><p><strong>Hypothèse nulle (</strong><span class="math inline">\(H_0\)</span>) : Le contexte de formalité n’a pas d’effet significatif sur le maintien ou l’omission du <em>ne</em>.</p></li>
+<li><p><strong>Hypothèse de travail (</strong><span class="math inline">\(H_1\)</span>) : L’emploi du <em>ne</em> augmente de manière significative lorsque le degré de formalité du contexte augmente (marqueur de style et de prestige social).</p></li>
+</ul>
+<hr>
+</section>
+<section id="cadre-conceptuel-et-opérationnalisation-variables" class="level4" data-number="5.7.1.2">
+<h4 data-number="5.7.1.2" class="anchored" data-anchor-id="cadre-conceptuel-et-opérationnalisation-variables"><span class="header-section-number">5.7.1.2</span> Cadre conceptuel et opérationnalisation (Variables)</h4>
+<ul>
+<li><p>Pour répondre scientifiquement à cette question selon la démarche de corpus, il faut isoler et manipuler des variables :</p>
+<ul>
+<li><p><strong>Variable Indépendante (VI) — Le contexte de formalité :</strong></p>
+<ul>
+<li><em>Registre / Situation :</em> Formel (ex. entretien d’embauche, conférence, examen oral) vs Informel (ex. discussion entre amis, SMS, forum de discussion).</li>
+</ul></li>
+<li><p><strong>Variable Dépendante (VD) — Le taux de maintien du <em>ne</em> :</strong></p>
+<ul>
+<li>Mesure de la proportion de négations complètes (ex. <em>je ne sais pas</em>) par rapport à l’ensemble des négations exprimées (ex. <em>je sais pas</em> + <em>je ne sais pas</em>).</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>$$\text{Taux de } ne = \frac{\text{Nombre de négations avec } ne}{\text{Nombre total de négations (avec et sans } ne)} \times 100$$</p>
+<hr>
+</section>
+<section id="définir-précisément-la-négation-que-lon-souhaite-étudier" class="level4" data-number="5.7.1.3">
+<h4 data-number="5.7.1.3" class="anchored" data-anchor-id="définir-précisément-la-négation-que-lon-souhaite-étudier"><span class="header-section-number">5.7.1.3</span> Définir précisément la négation que l’on souhaite étudier</h4>
+<ul>
+<li>Définir précisément les critères de formalité et la sous-catégorie de négation étudiée (ex. <em>ne…pas</em>, <em>ne…rien</em>, <em>ne…personne</em>).</li>
+</ul>
+<hr>
+</section>
+<section id="trouver-ou-constituer-un-corpus" class="level4" data-number="5.7.1.4">
+<h4 data-number="5.7.1.4" class="anchored" data-anchor-id="trouver-ou-constituer-un-corpus"><span class="header-section-number">5.7.1.4</span> Trouver (ou constituer) un corpus</h4>
+<ul>
+<li><p>Sélectionner un corpus oral ou écrit d’un même locuteur (ou d’un échantillon comparable) enregistré/recueilli dans deux contextes distincts :</p>
+<ul>
+<li><p><strong>Sous-corpus A (Formel) :</strong> Discours académiques, entretiens professionnels, corpus de français parlé dans la partie formelle.</p></li>
+<li><p><strong>Sous-corpus B (Informel) :</strong> Conversations familiales spontanées, interactions sur messagerie instantanée.</p></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="choix-du-corpus" class="level4" data-number="5.7.1.5">
+<h4 data-number="5.7.1.5" class="anchored" data-anchor-id="choix-du-corpus"><span class="header-section-number">5.7.1.5</span> Choix du corpus</h4>
+<section id="corpus-de-langue-parlée-oral" class="level5" data-number="5.7.1.5.1">
+<h5 data-number="5.7.1.5.1" class="anchored" data-anchor-id="corpus-de-langue-parlée-oral"><span class="header-section-number">5.7.1.5.1</span> <strong>Corpus de Langue Parlée (Oral)</strong></h5>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -442,9 +925,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td><strong>CFPP2000</strong></td>
 <td>Interviews conversationnelles sur les quartiers de Paris et sa proche banlieue.</td>
 <td>~50 h / &gt;700 000 mots <em>(volume Orféo moindre, date antérieure)</em></td>
-<td><p><a href="http://cfpp2000.univ-paris3.fr/">Lien</a></p>
-<p><br>
-</p></td>
+<td><a href="http://cfpp2000.univ-paris3.fr/">Lien</a></td>
 </tr>
 <tr class="even">
 <td><strong>CLAPI</strong></td>
@@ -502,9 +983,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
+<hr>
 </section>
-<section id="corpus-de-langue-écrite-communication-numérique" class="level3" data-number="3.1.4">
-<h3 data-number="3.1.4" class="anchored" data-anchor-id="corpus-de-langue-écrite-communication-numérique"><span class="header-section-number">3.1.4</span> <strong>Corpus de Langue Écrite &amp; Communication Numérique</strong></h3>
+<section id="corpus-de-langue-écrite-communication-numérique" class="level5" data-number="5.7.1.5.2">
+<h5 data-number="5.7.1.5.2" class="anchored" data-anchor-id="corpus-de-langue-écrite-communication-numérique"><span class="header-section-number">5.7.1.5.2</span> <strong>Corpus de Langue Écrite &amp; Communication Numérique</strong></h5>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -548,20 +1030,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </section>
-</section>
-<section id="téléchargement-des-données" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="téléchargement-des-données"><span class="header-section-number">3.2</span> Téléchargement des données</h2>
+<section id="téléchargement-des-données" class="level5" data-number="5.7.1.5.3">
+<h5 data-number="5.7.1.5.3" class="anchored" data-anchor-id="téléchargement-des-données"><span class="header-section-number">5.7.1.5.3</span> Téléchargement des données</h5>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>here() starts at /Users/jeremy-ua/Documents/Work/Teaching/1_KUL/2026-2027/Teaching_Materials</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Charge le fichier depuis la racine du projet</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>corpus_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">here</span>(<span class="st">"francais-moderne"</span>,<span class="st">"chapters"</span>, <span class="st">"corpus"</span>, <span class="st">"corpus_data.csv"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'dplyr' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Charge le fichier depuis la racine du projet</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>corpus_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">here</span>(<span class="st">"francais-moderne"</span>,<span class="st">"chapters"</span>, <span class="st">"corpus"</span>, <span class="st">"corpus_data.csv"</span>)) <span class="sc">%&gt;%</span> <span class="fu">filter</span>(corpus<span class="sc">==</span><span class="st">"CRFP"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Il faut toujours vérifier les données que l’on a télécharger !</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(corpus_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(corpus_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  word_nr       form       lemma upos xpos start_time end_time speaker
 1       1      voilà       voilà  INT  INT       0.18     0.39      L1
@@ -621,37 +1120,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 6          aligned</code></pre>
 </div>
 </div>
-<p>De quoi a-t-on besoin comme information ?</p>
-<p>pas</p>
+<hr>
+</section>
+</section>
+<section id="préparer-les-données-pré-traitement" class="level4" data-number="5.7.1.6">
+<h4 data-number="5.7.1.6" class="anchored" data-anchor-id="préparer-les-données-pré-traitement"><span class="header-section-number">5.7.1.6</span> Préparer les données (Pré-traitement)</h4>
+<ul>
+<li><p><strong>Tokenisation &amp; Nettoyage :</strong> Traiter les données brutes ou les transcriptions orales.</p></li>
+<li><p><strong>Étiquetage (POS Tagging) / Annotation :</strong> Identifier les structures négatives verbales.</p></li>
+</ul>
+<hr>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'dplyr' was built under R version 4.4.3</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'dplyr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:stats':
-
-    filter, lag</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Filter for utterances with "pas"</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>selection_negation <span class="ot">&lt;-</span> corpus_data <span class="sc">%&gt;%</span> </span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(utterance) <span class="sc">%&gt;%</span> </span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">any</span>(lemma <span class="sc">==</span> <span class="st">"pas"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Print the number of unique utterances</span></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Number of utterances containing 'pas':"</span>, <span class="fu">n_distinct</span>(selection_negation<span class="sc">$</span>utterance), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Filter for utterances with "pas"</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>selection_negation <span class="ot">&lt;-</span> corpus_data <span class="sc">%&gt;%</span> </span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(utterance) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">any</span>(lemma <span class="sc">==</span> <span class="st">"pas"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Print the number of unique utterances</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Number of utterances containing 'pas':"</span>, <span class="fu">n_distinct</span>(selection_negation<span class="sc">$</span>utterance), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Number of utterances containing 'pas': 11080 </code></pre>
+<pre><code>Number of utterances containing 'pas': 4497 </code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Filter for utterances that contain ADN but do NOT contain NOM</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>final_selection <span class="ot">&lt;-</span> selection_negation <span class="sc">%&gt;%</span> </span>
@@ -662,11 +1153,11 @@ Attaching package: 'dplyr'</code></pre>
 <span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Print result count</span></span>
 <span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Number of matching utterances:"</span>, <span class="fu">n_distinct</span>(final_selection<span class="sc">$</span>utterance), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Number of matching utterances: 3692 </code></pre>
+<pre><code>Number of matching utterances: 1383 </code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>corpus_annote <span class="ot">&lt;-</span> corpus_data <span class="sc">%&gt;%</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>corpus_annote <span class="ot">&lt;-</span> final_selection <span class="sc">%&gt;%</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(utterance) <span class="sc">%&gt;%</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">tag_negation =</span> <span class="fu">case_when</span>(</span>
@@ -690,69 +1181,243 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code># A tibble: 2 × 2
   tag_negation     n
   &lt;chr&gt;        &lt;int&gt;
-1 neg_avec_ne   4828
-2 neg_sans_ne   7266</code></pre>
+1 neg_avec_ne    267
+2 neg_sans_ne   1198</code></pre>
 </div>
 </div>
+<hr>
+</section>
+<section id="analyser-les-données" class="level4" data-number="5.7.1.7">
+<h4 data-number="5.7.1.7" class="anchored" data-anchor-id="analyser-les-données"><span class="header-section-number">5.7.1.7</span> Analyser les données</h4>
+<ul>
+<li><strong>Calcul des fréquences :</strong> Comparer la fréquence relative (pourcentage) du <em>ne</em> dans le sous-corpus formel versus le sous-corpus informel.</li>
+</ul>
+<hr>
+<section id="minitutoriel-filtrer-sélectionner-un-corpus-en-r-dplyr" class="level5" data-number="5.7.1.7.1">
+<h5 data-number="5.7.1.7.1" class="anchored" data-anchor-id="minitutoriel-filtrer-sélectionner-un-corpus-en-r-dplyr"><span class="header-section-number">5.7.1.7.1</span> Mini‑tutoriel : Filtrer &amp; Sélectionner un corpus en R (dplyr)</h5>
+<ul>
+<li><p>Comprendre les opérations essentielles pour manipuler un corpus :</p>
+<ul>
+<li><p><strong>filter</strong> : garder certaines lignes</p></li>
+<li><p><strong>select</strong> : garder certaines colonnes</p></li>
+<li><p>Opérateurs logiques : <strong>==</strong>, <strong>!=</strong>, <strong>&amp;</strong>, <strong>|</strong></p></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+</section>
+<section id="filtrer-avec-filter" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="filtrer-avec-filter"><span class="header-section-number">5.8</span> Filtrer avec <code>filter()</code></h2>
+<section id="garder-les-lignes-où-une-condition-est-vraie" class="level3" data-number="5.8.1">
+<h3 data-number="5.8.1" class="anchored" data-anchor-id="garder-les-lignes-où-une-condition-est-vraie"><span class="header-section-number">5.8.1</span> Garder les lignes où une condition est vraie</h3>
+<p>r</p>
+<pre><code>corpus %&gt;% filter(lemma == "pas")</code></pre>
+<hr>
+</section>
+<section id="exclure-une-valeur" class="level3" data-number="5.8.2">
+<h3 data-number="5.8.2" class="anchored" data-anchor-id="exclure-une-valeur"><span class="header-section-number">5.8.2</span> Exclure une valeur</h3>
+<p>r</p>
+<pre><code>corpus %&gt;% filter(upos != "NOM")</code></pre>
+<hr>
+</section>
+<section id="combiner-conditions-avec-et" class="level3" data-number="5.8.3">
+<h3 data-number="5.8.3" class="anchored" data-anchor-id="combiner-conditions-avec-et"><span class="header-section-number">5.8.3</span> Combiner conditions avec <strong>ET</strong> (<code>&amp;</code>)</h3>
+<p>r</p>
+<pre><code>corpus %&gt;% filter(lemma == "pas" &amp; upos == "ADV")</code></pre>
+<hr>
+</section>
+<section id="combiner-conditions-avec-ou" class="level3" data-number="5.8.4">
+<h3 data-number="5.8.4" class="anchored" data-anchor-id="combiner-conditions-avec-ou"><span class="header-section-number">5.8.4</span> Combiner conditions avec <strong>OU</strong> (<code>|</code>)</h3>
+<p>r</p>
+<pre><code>corpus %&gt;% filter(upos == "ADJ" | upos == "ADV")</code></pre>
+<hr>
+</section>
+<section id="exemple-linguistique-énoncés-contenant-pas-mais-sans-ne" class="level3" data-number="5.8.5">
+<h3 data-number="5.8.5" class="anchored" data-anchor-id="exemple-linguistique-énoncés-contenant-pas-mais-sans-ne"><span class="header-section-number">5.8.5</span> Exemple linguistique : énoncés contenant <em>pas</em> mais sans <em>ne</em></h3>
+<p>r</p>
+<pre><code>corpus %&gt;% 
+  group_by(utterance) %&gt;% 
+  filter(any(lemma == "pas") &amp; !any(lemma == "ne")) %&gt;% 
+  ungroup()</code></pre>
+<hr>
+</section>
+</section>
+<section id="sélectionner-des-colonnes-avec-select" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="sélectionner-des-colonnes-avec-select"><span class="header-section-number">5.9</span> Sélectionner des colonnes avec <code>select()</code></h2>
+<section id="garder-seulement-certaines-colonnes" class="level3" data-number="5.9.1">
+<h3 data-number="5.9.1" class="anchored" data-anchor-id="garder-seulement-certaines-colonnes"><span class="header-section-number">5.9.1</span> Garder seulement certaines colonnes</h3>
+<p>r</p>
+<pre><code>corpus %&gt;% select(utterance, lemma, upos)</code></pre>
+<hr>
+</section>
+<section id="exclure-une-colonne" class="level3" data-number="5.9.2">
+<h3 data-number="5.9.2" class="anchored" data-anchor-id="exclure-une-colonne"><span class="header-section-number">5.9.2</span> Exclure une colonne</h3>
+<p>r</p>
+<pre><code>corpus %&gt;% select(-speaker_id)</code></pre>
+<hr>
+</section>
+<section id="renommer-une-colonne-en-même-temps" class="level3" data-number="5.9.3">
+<h3 data-number="5.9.3" class="anchored" data-anchor-id="renommer-une-colonne-en-même-temps"><span class="header-section-number">5.9.3</span> Renommer une colonne en même temps</h3>
+<p>r</p>
+<pre><code>corpus %&gt;% select(token = lemma, pos = upos)</code></pre>
+<hr>
+</section>
+</section>
+<section id="combiner-filter-select" class="level2" data-number="5.10">
+<h2 data-number="5.10" class="anchored" data-anchor-id="combiner-filter-select"><span class="header-section-number">5.10</span> Combiner <code>filter()</code> + <code>select()</code></h2>
+<section id="exemple" class="level3" data-number="5.10.1">
+<h3 data-number="5.10.1" class="anchored" data-anchor-id="exemple"><span class="header-section-number">5.10.1</span> Exemple :</h3>
+<p><strong>Garder les adjectifs produits par des locuteurs masculins, et ne garder que lemma + age</strong></p>
+<p>r</p>
+<pre><code>corpus %&gt;%
+  filter(upos == "ADJ" &amp; sex == "M") %&gt;%
+  select(lemma, age)</code></pre>
+<hr>
+</section>
+</section>
+<section id="résumé-des-opérateurs-logiques" class="level2" data-number="5.11">
+<h2 data-number="5.11" class="anchored" data-anchor-id="résumé-des-opérateurs-logiques"><span class="header-section-number">5.11</span> Résumé des opérateurs logiques</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 16%">
+<col style="width: 35%">
+<col style="width: 19%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Opérateur</th>
+<th>Signification</th>
+<th>Exemple</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>==</strong></td>
+<td>égal à</td>
+<td>lemma == “pas”</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>!=</strong></td>
+<td>différent de</td>
+<td>upos != “NOM”</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>&amp;</strong></td>
+<td>ET logique</td>
+<td>lemma == “pas” &amp; upos == “ADV”</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>**</td>
+<td>**</td>
+<td>OU logique</td>
+<td>upos == “ADJ” \</td>
+<td>upos == “ADV”</td>
+</tr>
+<tr class="odd">
+<td><strong>!</strong></td>
+<td>NON logique</td>
+<td>!any(lemma == “ne”)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<section id="répondre-à-la-question-conclusion" class="level4" data-number="5.11.0.1">
+<h4 data-number="5.11.0.1" class="anchored" data-anchor-id="répondre-à-la-question-conclusion"><span class="header-section-number">5.11.0.1</span> Répondre à la question (Conclusion)</h4>
+<ul>
+<li>Valider ou infirmer l’hypothèse de travail <span class="math inline">\(H_1\)</span> selon la significativité statistique des résultats.</li>
+</ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>corpus_annote <span class="sc">%&gt;%</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(age) <span class="sc">%&gt;%</span> </span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(lemma <span class="sc">==</span> <span class="st">"pas"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(tag_negation)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>corpus_annote <span class="sc">%&gt;%</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(interaction) <span class="sc">%&gt;%</span> </span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(lemma <span class="sc">==</span> <span class="st">"pas"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(tag_negation)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 9 × 3
-# Groups:   age [5]
-  age     tag_negation     n
-  &lt;chr&gt;   &lt;chr&gt;        &lt;int&gt;
-1 0-15    neg_sans_ne      3
-2 16-20   neg_avec_ne    434
-3 16-20   neg_sans_ne    444
-4 21-60   neg_avec_ne   2817
-5 21-60   neg_sans_ne   4789
-6 61+     neg_avec_ne    783
-7 61+     neg_sans_ne    870
-8 inconnu neg_avec_ne    794
-9 inconnu neg_sans_ne   1160</code></pre>
+<pre><code># A tibble: 15 × 3
+# Groups:   interaction [8]
+   interaction           tag_negation     n
+   &lt;chr&gt;                 &lt;chr&gt;        &lt;int&gt;
+ 1 conversation          neg_avec_ne      4
+ 2 conversation          neg_sans_ne     19
+ 3 cours                 neg_avec_ne     14
+ 4 cours                 neg_sans_ne     23
+ 5 entretien             neg_avec_ne    202
+ 6 entretien             neg_sans_ne   1015
+ 7 explication           neg_avec_ne      4
+ 8 explication           neg_sans_ne     22
+ 9 médias oraux          neg_avec_ne     15
+10 médias oraux          neg_sans_ne     17
+11 narration             neg_avec_ne     18
+12 narration             neg_sans_ne     71
+13 présentation publique neg_sans_ne      2
+14 réunion               neg_avec_ne     10
+15 réunion               neg_sans_ne     29</code></pre>
 </div>
 </div>
+<hr>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: package 'ggplot2' was built under R version 4.4.3</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Calcul du comptage et des pourcentages par sexe</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>frequence_negation <span class="ot">&lt;-</span> corpus_annote <span class="sc">%&gt;%</span></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(lemma <span class="sc">==</span> <span class="st">"pas"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(sex, tag_negation) <span class="sc">%&gt;%</span></span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">effectif =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">"drop_last"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">proportion =</span> effectif <span class="sc">/</span> <span class="fu">sum</span>(effectif) <span class="sc">*</span> <span class="dv">100</span>)</span>
-<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Afficher la table récapitulative dans la console</span></span>
-<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(frequence_negation)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Calcul du comptage et des pourcentages par sexe</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>frequence_negation <span class="ot">&lt;-</span> corpus_annote <span class="sc">%&gt;%</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(lemma <span class="sc">==</span> <span class="st">"pas"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(interaction, tag_negation) <span class="sc">%&gt;%</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">effectif =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">"drop_last"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">proportion =</span> effectif <span class="sc">/</span> <span class="fu">sum</span>(effectif) <span class="sc">*</span> <span class="dv">100</span>)</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Afficher la table récapitulative dans la console</span></span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(frequence_negation)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 6 × 4
-# Groups:   sex [3]
-  sex     tag_negation effectif proportion
-  &lt;chr&gt;   &lt;chr&gt;           &lt;int&gt;      &lt;dbl&gt;
-1 F       neg_avec_ne      1966       35.8
-2 F       neg_sans_ne      3522       64.2
-3 M       neg_avec_ne      2857       43.3
-4 M       neg_sans_ne      3736       56.7
-5 inconnu neg_avec_ne         5       38.5
-6 inconnu neg_sans_ne         8       61.5</code></pre>
+<pre><code># A tibble: 15 × 4
+# Groups:   interaction [8]
+   interaction           tag_negation effectif proportion
+   &lt;chr&gt;                 &lt;chr&gt;           &lt;int&gt;      &lt;dbl&gt;
+ 1 conversation          neg_avec_ne         4       17.4
+ 2 conversation          neg_sans_ne        19       82.6
+ 3 cours                 neg_avec_ne        14       37.8
+ 4 cours                 neg_sans_ne        23       62.2
+ 5 entretien             neg_avec_ne       202       16.6
+ 6 entretien             neg_sans_ne      1015       83.4
+ 7 explication           neg_avec_ne         4       15.4
+ 8 explication           neg_sans_ne        22       84.6
+ 9 médias oraux          neg_avec_ne        15       46.9
+10 médias oraux          neg_sans_ne        17       53.1
+11 narration             neg_avec_ne        18       20.2
+12 narration             neg_sans_ne        71       79.8
+13 présentation publique neg_sans_ne         2      100  
+14 réunion               neg_avec_ne        10       25.6
+15 réunion               neg_sans_ne        29       74.4</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Graphique en barres empilées à 100% (Proportions)</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(frequence_negation, <span class="fu">aes</span>(<span class="at">x =</span> sex, <span class="at">y =</span> proportion, <span class="at">fill =</span> tag_negation)) <span class="sc">+</span></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="st">"fill"</span>) <span class="sc">+</span></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>percent) <span class="sc">+</span></span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Répartition de la négation avec ou sans 'ne' selon le sexe"</span>,</span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Sexe"</span>,</span>
-<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Proportion"</span>,</span>
-<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"Type de négation"</span></span>
-<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Graphique en barres empilées à 100% (Proportions)</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(frequence_negation, <span class="fu">aes</span>(<span class="at">x =</span> interaction, <span class="at">y =</span> proportion, <span class="at">fill =</span> tag_negation)) <span class="sc">+</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="st">"fill"</span>) <span class="sc">+</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>percent) <span class="sc">+</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Répartition de la négation avec ou sans 'ne' selon la tâche"</span>,</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Tâche"</span>,</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Proportion"</span>,</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"Type de négation"</span></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()<span class="sc">+</span></span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)</span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -761,46 +1426,42 @@ Attaching package: 'dplyr'</code></pre>
 </div>
 </div>
 </div>
+<hr>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Calcul du comptage et des pourcentages par sexe</span></span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>frequence_negation <span class="ot">&lt;-</span> corpus_annote <span class="sc">%&gt;%</span></span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(lemma <span class="sc">==</span> <span class="st">"pas"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(education, tag_negation) <span class="sc">%&gt;%</span></span>
-<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">effectif =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">"drop_last"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">proportion =</span> effectif <span class="sc">/</span> <span class="fu">sum</span>(effectif) <span class="sc">*</span> <span class="dv">100</span>)</span>
-<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Afficher la table récapitulative dans la console</span></span>
-<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(frequence_negation)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Calcul du comptage et des pourcentages par sexe</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>frequence_negation <span class="ot">&lt;-</span> corpus_annote <span class="sc">%&gt;%</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(lemma <span class="sc">==</span> <span class="st">"pas"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(sex, tag_negation) <span class="sc">%&gt;%</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">effectif =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">"drop_last"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">proportion =</span> effectif <span class="sc">/</span> <span class="fu">sum</span>(effectif) <span class="sc">*</span> <span class="dv">100</span>)</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Afficher la table récapitulative dans la console</span></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(frequence_negation)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 10 × 4
-# Groups:   education [5]
-   education          tag_negation effectif proportion
-   &lt;chr&gt;              &lt;chr&gt;           &lt;int&gt;      &lt;dbl&gt;
- 1 collège            neg_avec_ne       232       23.1
- 2 collège            neg_sans_ne       774       76.9
- 3 inconnu            neg_avec_ne      2374       48.4
- 4 inconnu            neg_sans_ne      2527       51.6
- 5 lycée              neg_avec_ne       207       19.8
- 6 lycée              neg_sans_ne       837       80.2
- 7 primaire           neg_avec_ne        41       32.3
- 8 primaire           neg_sans_ne        86       67.7
- 9 études supérieures neg_avec_ne      1974       39.4
-10 études supérieures neg_sans_ne      3042       60.6</code></pre>
+<pre><code># A tibble: 5 × 4
+# Groups:   sex [3]
+  sex     tag_negation effectif proportion
+  &lt;chr&gt;   &lt;chr&gt;           &lt;int&gt;      &lt;dbl&gt;
+1 F       neg_avec_ne       128       16.7
+2 F       neg_sans_ne       638       83.3
+3 M       neg_avec_ne       139       19.9
+4 M       neg_sans_ne       558       80.1
+5 inconnu neg_sans_ne         2      100  </code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Graphique en barres empilées à 100% (Proportions)</span></span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(frequence_negation, <span class="fu">aes</span>(<span class="at">x =</span> education, <span class="at">y =</span> proportion, <span class="at">fill =</span> tag_negation)) <span class="sc">+</span></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="st">"fill"</span>) <span class="sc">+</span></span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>percent) <span class="sc">+</span></span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Répartition de la négation avec ou sans 'ne' selon le sexe"</span>,</span>
-<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Sexe"</span>,</span>
-<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Proportion"</span>,</span>
-<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"Type de négation"</span></span>
-<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Graphique en barres empilées à 100% (Proportions)</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(frequence_negation, <span class="fu">aes</span>(<span class="at">x =</span> sex, <span class="at">y =</span> proportion, <span class="at">fill =</span> tag_negation)) <span class="sc">+</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="st">"fill"</span>) <span class="sc">+</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>percent) <span class="sc">+</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Répartition de la négation avec ou sans 'ne' selon le sexe"</span>,</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Sexe"</span>,</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Proportion"</span>,</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"Type de négation"</span></span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -809,40 +1470,47 @@ Attaching package: 'dplyr'</code></pre>
 </div>
 </div>
 </div>
+<hr>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Calcul du comptage et des pourcentages par sexe</span></span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>frequence_negation <span class="ot">&lt;-</span> corpus_annote <span class="sc">%&gt;%</span></span>
-<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(lemma <span class="sc">==</span> <span class="st">"pas"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(corpus, tag_negation) <span class="sc">%&gt;%</span></span>
-<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">effectif =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">"drop_last"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">proportion =</span> effectif <span class="sc">/</span> <span class="fu">sum</span>(effectif) <span class="sc">*</span> <span class="dv">100</span>)</span>
-<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Afficher la table récapitulative dans la console</span></span>
-<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(frequence_negation)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Calcul du comptage et des pourcentages par sexe</span></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>frequence_negation <span class="ot">&lt;-</span> corpus_annote <span class="sc">%&gt;%</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(lemma <span class="sc">==</span> <span class="st">"pas"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(education, tag_negation) <span class="sc">%&gt;%</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">effectif =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">"drop_last"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">proportion =</span> effectif <span class="sc">/</span> <span class="fu">sum</span>(effectif) <span class="sc">*</span> <span class="dv">100</span>)</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Afficher la table récapitulative dans la console</span></span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(frequence_negation)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 4 × 4
-# Groups:   corpus [2]
-  corpus  tag_negation effectif proportion
-  &lt;chr&gt;   &lt;chr&gt;           &lt;int&gt;      &lt;dbl&gt;
-1 CRFP    neg_avec_ne      1237       24.9
-2 CRFP    neg_sans_ne      3733       75.1
-3 VALIBEL neg_avec_ne      3591       50.4
-4 VALIBEL neg_sans_ne      3533       49.6</code></pre>
+<pre><code># A tibble: 10 × 4
+# Groups:   education [5]
+   education          tag_negation effectif proportion
+   &lt;chr&gt;              &lt;chr&gt;           &lt;int&gt;      &lt;dbl&gt;
+ 1 collège            neg_avec_ne        45       14.9
+ 2 collège            neg_sans_ne       257       85.1
+ 3 inconnu            neg_avec_ne        20       33.9
+ 4 inconnu            neg_sans_ne        39       66.1
+ 5 lycée              neg_avec_ne        47       14.6
+ 6 lycée              neg_sans_ne       275       85.4
+ 7 primaire           neg_avec_ne        15       38.5
+ 8 primaire           neg_sans_ne        24       61.5
+ 9 études supérieures neg_avec_ne       140       18.8
+10 études supérieures neg_sans_ne       603       81.2</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Graphique en barres empilées à 100% (Proportions)</span></span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(frequence_negation, <span class="fu">aes</span>(<span class="at">x =</span> corpus, <span class="at">y =</span> proportion, <span class="at">fill =</span> tag_negation)) <span class="sc">+</span></span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="st">"fill"</span>) <span class="sc">+</span></span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>percent) <span class="sc">+</span></span>
-<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Répartition de la négation avec ou sans 'ne' selon le sexe"</span>,</span>
-<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Sexe"</span>,</span>
-<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Proportion"</span>,</span>
-<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"Type de négation"</span></span>
-<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Graphique en barres empilées à 100% (Proportions)</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(frequence_negation, <span class="fu">aes</span>(<span class="at">x =</span> education, <span class="at">y =</span> proportion, <span class="at">fill =</span> tag_negation)) <span class="sc">+</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="st">"fill"</span>) <span class="sc">+</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>percent) <span class="sc">+</span></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Répartition de la négation avec ou sans 'ne' selon le niveau d'éducation"</span>,</span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Sexe"</span>,</span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Proportion"</span>,</span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"Type de négation"</span></span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -851,12 +1519,23 @@ Attaching package: 'dplyr'</code></pre>
 </div>
 </div>
 </div>
-<p>attention</p>
-<p>jamais</p>
-
-
+<hr>
 </section>
 </section>
+</section>
+<section id="no-stress" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> No Stress</h1>
+<div class="side-by-side">
+<p>J’ai un cadeau pour vous !</p>
+<p><img src="images/clipboard-1811006658.png" class="img-fluid"></p>
+</div>
+<hr>
+<p>Google Colab:</p>
+<p><a href="https://colab.research.google.com/drive/1T9jLQHwhN3Fd9OY2s43wxpgF1l4tWi86?usp=sharing" class="uri">https://colab.research.google.com/drive/1T9jLQHwhN3Fd9OY2s43wxpgF1l4tWi86?usp=sharing</a></p>
+</section>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1274,13 +1953,13 @@ Attaching package: 'dplyr'</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/000-intro.html" class="pagination-link" aria-label="Cours d'introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cours d’introduction</span></span>
+      <a href="../chapters/000-intro.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/002-phonologie-voyelles.html" class="pagination-link" aria-label="Phonologie - Voyelles médianes">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Phonologie - Voyelles médianes</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/001A-intro-corpus.html" class="pagination-link" aria-label="Introduction et mise en contexte">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction et mise en contexte</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1289,4 +1968,4 @@ Attaching package: 'dplyr'</code></pre>
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/YOUR-ORG/Teaching/edit/main/chapters/001-phonetique-affrication.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/YOUR-ORG/Teaching/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/YOUR-ORG/Teaching/edit/main/chapters/001-phonetique-affrication.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/YOUR-ORG/Teaching/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
